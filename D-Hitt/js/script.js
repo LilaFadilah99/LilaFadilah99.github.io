@@ -2,6 +2,8 @@ const tanah = document.querySelectorAll(".tanah");
 const tikus = document.querySelectorAll(".tikus");
 const papanSkor = document.querySelector(".papan-skor");
 const pop = document.querySelector("#pop");
+let music = document.getElementById('audioMusic').volume = 0.2
+let iframe = document.getElementById('audio').volume = 0.2
 
 let tanahSebelumnya;
 let selesai;

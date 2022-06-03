@@ -4,3 +4,5 @@
 // function playMusic() {
 //     play = music.play()
 // }
+
+let play = document.getElementById('audioMusic').volume = 0.1

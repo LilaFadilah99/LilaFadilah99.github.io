@@ -14,22 +14,15 @@
             -o-background-size: cover;
             background-size: cover;
         }
-        
-        #btn-container {
-            /* margin-left: -800px; */
-            /* padding-top: 200px; */
-        }
     </style>
 </head>
 
 <body>
 
-    <!-- <h1>Pukul Tikus Tanah</h1> -->
     <div id="btn-container">
         <button type="button" class="mulai" onclick="mulai()">Click To Start</button>
         <h2 class="papan-skor">0</h2>
     </div>
-
 
     <div class="container">
         <div class="tanah">
@@ -51,9 +44,9 @@
             <div class="tikus"></div>
         </div>
     </div>
-    <iframe src="./audio/opening.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-    <audio autoplay loop id="audio">
-        <source src="./audio/opening.mp3">
+    <iframe allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio autoplay loop id="audioMusic">
+        <source src="./audio/game.mp3">
     </audio>
     <audio src="audio/suara-pukulan.mp3" id="pop"></audio>
     <script src="js/script.js"></script>
