@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Hitt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html {
+            background: url('./img/game-bg-5.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        #btn-container {
+            /* margin-left: -800px; */
+            /* padding-top: 200px; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h1>Pukul Tikus Tanah</h1> -->
+    <div id="btn-container">
+        <button type="button" class="mulai" onclick="mulai()">Click To Start</button>
+        <h2 class="papan-skor">0</h2>
+    </div>
+
+
+    <div class="container">
+        <div class="tanah">
+            <div class="tikus"></div>
+        </div>
+        <div class="tanah">
+            <div class="tikus"></div>
+        </div>
+        <div class="tanah">
+            <div class="tikus"></div>
+        </div>
+        <div class="tanah">
+            <div class="tikus"></div>
+        </div>
+        <div class="tanah">
+            <div class="tikus"></div>
+        </div>
+        <div class="tanah">
+            <div class="tikus"></div>
+        </div>
+    </div>
+    <iframe src="./audio/opening.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio autoplay loop id="audio">
+        <source src="./audio/opening.mp3">
+    </audio>
+    <audio src="audio/suara-pukulan.mp3" id="pop"></audio>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
